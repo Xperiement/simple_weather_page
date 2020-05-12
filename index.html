@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="mainSection">
+        <div class="container">
+            <div class="card c1">
+                <p>Weather</p>
+                <h1 class="cardHead" id="weatherType">1</h1>
+                <p>Temparature</p>
+                <h1 class="cardHead" id="tempSelector">1</h1>
+            </div>
+            <div class="card c2">
+                <p class="inputPlaceholder">Enter your city</p>
+                <div class="inputSection">
+                    <input id="cityName" type="text" class="inputCity" placeholder="Type here">
+                    <button onclick="parseJson()" class="getWeather">Get Weather</button>
+                </div>
+            </div>
+
+            <div class="card c3">
+                <p>Wind direction</p>
+                <div class="circleContainer">
+                    <p class="direction">N</p>
+                    <div class="circle" id="windDirction">
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="windSpeedContainer">
+                        <p>Speed</p>
+                        <p class="ispidText" id="ispidValue">null</p>
+                        <div class="speedContainer">
+                            <div class="speed" id="ispid"></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="card c4">
+                <p>Country</p>
+                <h1 class="cardHead" id="country">N/A</h1>
+            </div>
+
+            <div class="card c5">
+                <div onclick="toggleOn()" class="switch" id="switch">
+                    <div class="toggle" id="tgl"><p id="tempType">C</p></div>
+                </div>
+            </div>
+
+            <div class="card cardBtn">
+                <a href="https://epicX67.github.io">About</a>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="main.js"></script>
+</html>
